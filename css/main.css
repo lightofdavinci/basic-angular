@@ -1,0 +1,24 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+
+body{
+	background-color: #135;
+	color:#fff;
+	font-family: 'Oswald', sans-serif;
+}
+li a{
+	color: #000;
+}
+
+li p{
+	margin-bottom: 3px;
+}
+
+.glyphicon{
+	color:#932;
+}
+.glyphicon:hover{
+	cursor:pointer;
+}
+.comments{
+	color:#777;
+}

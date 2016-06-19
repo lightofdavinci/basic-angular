@@ -1,0 +1,21 @@
+<form ng-submit="addComment()" style="margin-top: 50px">
+	<h3> Leave Your Comment </h3>
+	<div class="form-group row">
+		<div class="col-xs-6">
+			<input type="text" class="form-control" placeholder="Great comments here" ng-model="body"></input>
+		</div>
+		<div class="col-xs-6">
+			<button type="submit" class="btn btn-primary">Submit</button>
+		</div>
+	</div>	
+</form>
+
+<ul class="list-group list-unstyled">
+  <li ng-repeat="comment in post.comments | orderBy:'-upvotes'">
+  {{comment.body}}
+  <p>Upvotes: {{comment.upvotes}}
+  <span class="glyphicon glyphicon-thumbs-up" ng-click="upVoteC(comment)"></span>
+	<span class="glyphicon glyphicon-thumbs-down" ng-click="downVoteC(comment)"></span>
+  </p>
+	</li>
+</ul> 
