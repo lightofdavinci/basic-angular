@@ -3,9 +3,9 @@ var express = require('express');
 var app = express();
 
 app.use('/css', express.static(process.cwd() + '/css'));
-app.use('/fonts', express.static(process.cwd() + 'fonts'));
+app.use('/fonts', express.static(process.cwd() + '/fonts'));
 app.use('/js', express.static(process.cwd() + '/js'));
-app.use('/views', express.static(process.cwd() + 'views'));
+app.use('/views', express.static(process.cwd() + '/views'));
 
 app.get('/',function (req, res) {
 			res.sendFile(process.cwd() + '/index.html');
