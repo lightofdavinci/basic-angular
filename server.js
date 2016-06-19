@@ -9,8 +9,6 @@ app.use('/views', express.static(process.cwd() + 'views'));
 
 app.get('/',function (req, res) {
 			res.sendFile(process.cwd() + '/index.html');
-			res.sendFile(process.cwd() + '/views/home.html');
-			res.sendFile(process.cwd() + '/views/suggestion.html');
 		});
 
 var port = process.env.PORT;
